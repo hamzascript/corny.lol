@@ -1,40 +1,142 @@
 ---
+
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<script src="../../node_modules/preline/dist/preline.js"></script>
-		<link rel="stylesheet" href="/css/styles.css">
-		<title>Astro</title>
-	</head>
-	<body class="bg-slate-500">
-		<header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-4 dark:bg-neutral-800">
-			<nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between" aria-label="Global">
-			  <a class="sm:order-1 flex-none text-xl font-semibold dark:text-white" href="#">corny.lol</a>
-			  <div class="sm:order-3 flex items-center gap-x-2">
-				<button type="button" class="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10" data-hs-collapse="#navbar-alignment" aria-controls="navbar-alignment" aria-label="Toggle navigation">
-				  <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-				  <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-				</button>
-				<button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800">
-				  Documentation
-				</button>
-			  </div>
-			  <div id="navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2">
-				<div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-				  <a class="font-medium text-blue-500" href="/" aria-current="page">Home</a>
-				  <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 transition-all" href="https://github.com/hamzascript/cornylol">GitHub</a>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Astro</title>
+    <script
+      src="https://kit.fontawesome.com/0414a0ccd5.js"
+      crossorigin="anonymous"></script>
+    <script src="../../node_modules/preline/dist/preline.js"></script>
+  </head>
+  <body
+    class="bg-gradient-to-b from-blue-800 to-neutral-950 min-h-screen scroll-smooth"
+  >
+    <header class="flex flex-wrap w-full text-sm py-4 bg-neutral-800">
+      <nav
+        class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
+        aria-label="Global"
+      >
+        <a class="flex-none text-3xl font-semibold text-white" href="/"
+          >corny.lol</a
+        >
+        <div class="flex items-center gap-x-2">
+          <button
+            type="button"
+            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border shadow-sm disabled:opacity-50 disabled:pointer-events-none bg-neutral-600 border-neutral-700 text-white hover:bg-neutral-700 transition-all"
+          >
+            <a href="https://github.com/hamzascript/corny.lol">GitHub</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+	
+
+	<div class="flex h-screen flex-col justify-center items-center text-center relative">
+		<div class="full-page">
+			<h1 class="text-5xl text-white">Create amusing Applications &</h1>
+			<h1 class="text-5xl text-white">fun tools with Corny.</h1>
+		</div>
+	</div>
+
+	<div class="" id="extra">
+		<section id="demo" class="flex justify-center items-center">
+			<div class="flex flex-col justify-center items-center mr-4">
+			  <button
+				type="button"
+				id="buttonPress"
+				class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+			  >
+				Click me!
+			  </button>
+			</div>
+	
+		  <div class="flex items-center bg-gray-900 p-4 rounded-md max-w-xl">
+			<span class="text-green-500">&gt;</span>
+			<div id="jokeJson" class="text-white flex-row ml-2"></div>
+		  </div>
+		</section>
+	
+		<div class="flex flex-col justify-center items-center mt-44">
+			<div class="w-1/2 rounded-lg shadow-md bg-neutral-800">
+				<div class="hs-accordion-group">
+				  <div class="hs-accordion active" id="hs-basic-heading-one">
+					<button class="hs-accordion-toggle hs-accordion-active:text-blue-600 px-6 py-3 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400" aria-controls="hs-basic-collapse-one">
+					  <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="M12 5v14"></path>
+					  </svg>
+					  <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+					  </svg>
+					  General Jokes
+					</button>
+					<div id="hs-basic-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-heading-one">
+					  <div class="pb-4 px-6">
+						<p class="text-sm text-gray-600 dark:text-neutral-200">
+						  To get General Jokes, request a GET call from the following URL https://api.corny.lol/
+						</p>
+					  </div>
+					</div>
+				  </div>
+			  
+				  <div class="hs-accordion" id="hs-basic-heading-two">
+					<button class="hs-accordion-toggle hs-accordion-active:text-blue-600 px-6 py-3 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400" aria-controls="hs-basic-collapse-two">
+					  <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="M12 5v14"></path>
+					  </svg>
+					  <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+					  </svg>
+					  Accordion #2
+					</button>
+					<div id="hs-basic-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-heading-two">
+					  <div class="pb-4 px-6">
+						<p class="text-sm text-gray-600 dark:text-neutral-200">
+						  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, sunt?
+						</p>
+					  </div>
+					</div>
+				  </div>
+			  
+				  <div class="hs-accordion" id="hs-basic-heading-three">
+					<button class="hs-accordion-toggle hs-accordion-active:text-blue-600 px-6 py-3 inline-flex items-center gap-x-3 text-sm w-full font-semibold text-start text-gray-800 hover:text-gray-500 rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-neutral-200 dark:hover:text-neutral-400" aria-controls="hs-basic-collapse-three">
+					  <svg class="hs-accordion-active:hidden hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 block size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="M12 5v14"></path>
+					  </svg>
+					  <svg class="hs-accordion-active:block hs-accordion-active:text-blue-600 hs-accordion-active:group-hover:text-blue-600 hidden size-4 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+					  </svg>
+					  Accordion #3
+					</button>
+					<div id="hs-basic-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-basic-heading-three">
+					  <div class="pb-4 px-6">
+						<p class="text-sm text-gray-600 dark:text-neutral-200">
+						  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, reprehenderit.
+						</p>
+					  </div>
+					</div>
+				  </div>
 				</div>
 			  </div>
-			</nav>
-		  </header>
+		</div>
+	
+		<div class="flex flex-col justify-center items-center mt-12">
+			<p class="text-white">Developed by <a href="https://hamzaelashry.one" class="text-blue-500">Hamza Elashry</a></p>
+		</div>
+	</div>
 
-		  <h1 class="text-6xl text-white flex flex-col justify-center items-center mt-64">corny.lol</h1>
-		  <p class="flex flex-col justify-center items-center mt-6 text-xl text-white">Your one stop for funny APIs!</p>
+	
 
-	</body>
+    <script src="../../public/js/index.js"></script>
+  </body>
 </html>
